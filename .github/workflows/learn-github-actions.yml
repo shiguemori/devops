@@ -23,7 +23,7 @@ jobs:
           cd dist && zip -r -9 api.zip *
 
       - name: Update
-        uses: aws/codecommit-source@v1
+        uses: appleboy/lambda-action@master
         #kazimanzurrashid/aws-lambda-update-action@v1
         with:
           zip-file: dist/api.zip
