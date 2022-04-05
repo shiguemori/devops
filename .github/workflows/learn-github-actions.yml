@@ -29,3 +29,4 @@ jobs:
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_region: ${{ secrets.AWS_REGION }}
           zip_file: dist/api.zip
+          function_name: teste
