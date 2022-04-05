@@ -23,7 +23,8 @@ jobs:
           cd dist && zip -r -9 api.zip *
 
       - name: Update
-        uses: kazimanzurrashid/aws-lambda-update-action@v1
+        uses: aws/codecommit-source@v1
+        #kazimanzurrashid/aws-lambda-update-action@v1
         with:
           zip-file: dist/api.zip
         env:
